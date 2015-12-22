@@ -28,7 +28,7 @@ public class Problem8{
             long result = 1;
             for(int j = i; j < i+adj; j++){
                 if(in.get(j).equals(0)){
-                    i+=adj-1;
+                    i+=j-i;
                     result = 1;
                     break;
                 }
